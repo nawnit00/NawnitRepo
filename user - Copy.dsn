@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=SQL Server
+UID=penton
+DATABASE=SourceESB
+WSID=AEQUOR-LB
+APP=Microsoft Office 2010
+SERVER=192.168.7.56
+Description=user mgmt
