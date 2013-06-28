@@ -1,0 +1,14 @@
+
+1) What we did today:
+
+1. R&D and Installing  Git on window server.
+2. Install Putty on window server.
+3. Creating ssh key using putty.
+4. Configurating local public key to Git server
+5. Create a Remote Git repository in remote server for local files.
+
+
+2) What we inted to do tomorrow ?
+
+ Implementing git on Linux server.
+
