@@ -1,0 +1,35 @@
+Adding a user
+
+If you intend to share these repositories with any collaborators, at this point you’ll either:
+•Want to install something like Gitosis (outside the scope of this article, but this is a good, if old, tutorial); or
+•Add a “shared” Git user.
+
+We’ll be following the latter option. So, add a Git user:
+sudo adduser git
+
+Now you’ll need to add your public key to the Git user’s authorized_keys:
+sudo mkdir /home/git/.ssh
+sudo cp ~/.ssh/authorized_keys /home/git/.ssh/
+sudo chown -R git:git /home/git/.ssh
+sudo chmod 700 !$
+sudo chmod 600 /home/git/.ssh/*
+
+
+Now you’ll be able to authenticate as the Git user via SSH. Test it out:
+ssh git@myserver.com
+
+Add your repositories
+
+If you were to not share the repositories, and just wanted to access them for yourself (like I did, since I have no collaborators), you’d do the following as yourself. Otherwise, do it as the Git user we added above.
+
+If using the Git user, log in as them:
+login git
+
+Now we can create our repositories:
+mkdir myrepo.git
+cd !$
+git --bare init
+-------------------------------------
+ssh -T git@github.com
+
+61.12.3.68
